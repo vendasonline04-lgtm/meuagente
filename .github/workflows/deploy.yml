@@ -23,7 +23,37 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Create SPA .htaccess
+      - name: Diagnostico - listar build output
+        run: |
+          echo "=== Estrutura de dist/ ==="
+          find dist/ -type f | sort
+          echo "=== index.html encontrado em: ==="
+          find dist/ -name "index.html" || echo "NENHUM index.html encontrado"
+
+      - name: Criar index.html se nao existir
+        run: |
+          if [ -f dist/client/index.html ]; then
+            echo "index.html ja existe em dist/client/"
+          elif [ -f dist/index.html ]; then
+            echo "index.html encontrado em dist/ — copiando para dist/client/"
+            cp dist/index.html dist/client/index.html
+          else
+            echo "Gerando index.html a partir do manifesto Vite..."
+            node -e "
+              const fs = require('fs');
+              const manifest = JSON.parse(fs.readFileSync('dist/client/.vite/manifest.json', 'utf8'));
+              const entries = Object.values(manifest).filter(m => m.isEntry);
+              const cssFiles = [...new Set(entries.flatMap(e => e.css || []))];
+              const jsFiles = entries.map(e => e.file);
+              const cssLinks = cssFiles.map(c => '    <link rel=\"stylesheet\" href=\"/' + c + '\">').join('\n');
+              const jsScripts = jsFiles.map(j => '    <script type=\"module\" src=\"/' + j + '\"></script>').join('\n');
+              const html = '<!DOCTYPE html>\n<html lang=\"pt-BR\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Meu Agente do Zero</title>\n    <link rel=\"icon\" href=\"/favicon.ico\" />\n' + cssLinks + '\n  </head>\n  <body>\n' + jsScripts + '\n  </body>\n</html>';
+              fs.writeFileSync('dist/client/index.html', html);
+              console.log('index.html gerado com sucesso');
+            "
+          fi
+
+      - name: Criar SPA .htaccess
         run: |
           cat > dist/client/.htaccess << 'EOF'
           <IfModule mod_rewrite.c>
