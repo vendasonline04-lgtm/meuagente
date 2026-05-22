@@ -23,41 +23,9 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Diagnostico - listar build output
-        run: |
-          echo "=== Estrutura de dist/ ==="
-          find dist/ -type f | sort
-          echo "=== index.html encontrado em: ==="
-          find dist/ -name "index.html" || echo "NENHUM index.html encontrado"
-
-      - name: Criar index.html se nao existir
-        run: |
-          if [ -f dist/client/index.html ]; then
-            echo "index.html ja existe em dist/client/"
-          elif [ -f dist/index.html ]; then
-            echo "index.html encontrado em dist/ — copiando para dist/client/"
-            cp dist/index.html dist/client/index.html
-          else
-            echo "Gerando index.html varrendo assets/..."
-            node -e "
-              const fs = require('fs');
-              const assetsDir = 'dist/client/assets';
-              const files = fs.readdirSync(assetsDir);
-              const jsFiles = files.filter(f => f.endsWith('.js') && f.startsWith('index-'));
-              const cssFiles = files.filter(f => f.endsWith('.css'));
-              console.log('JS:', jsFiles);
-              console.log('CSS:', cssFiles);
-              const cssLinks = cssFiles.map(c => '    <link rel=\"stylesheet\" href=\"/assets/' + c + '\">').join('\n');
-              const jsScripts = jsFiles.map(j => '    <script type=\"module\" src=\"/assets/' + j + '\"></script>').join('\n');
-              const html = '<!DOCTYPE html>\n<html lang=\"pt-BR\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Meu Agente do Zero</title>\n    <link rel=\"icon\" href=\"/favicon.ico\" />\n' + cssLinks + '\n  </head>\n  <body>\n' + jsScripts + '\n  </body>\n</html>';
-              fs.writeFileSync('dist/client/index.html', html);
-              console.log('index.html gerado com sucesso');
-            "
-          fi
-
       - name: Criar SPA .htaccess
         run: |
-          cat > dist/client/.htaccess << 'EOF'
+          cat > dist/.htaccess << 'EOF'
           <IfModule mod_rewrite.c>
             RewriteEngine On
             RewriteBase /
@@ -76,7 +44,7 @@ jobs:
           password: ${{ secrets.FTP_PASS }}
           protocol: ftps
           port: 21
-          local-dir: dist/client/
+          local-dir: dist/
           server-dir: /
           timeout: 120000
           dangerous-clean-slate: false
