@@ -45,7 +45,7 @@ jobs:
           protocol: ftps
           port: 21
           local-dir: dist/client/
-          server-dir: /public_html/meuagentedozero/
+          server-dir: /
           timeout: 120000
           dangerous-clean-slate: false
           dry-run: false
