@@ -25,7 +25,7 @@ jobs:
 
       - name: Create SPA .htaccess
         run: |
-          cat > dist/.htaccess << 'EOF'
+          cat > dist/client/.htaccess << 'EOF'
           <IfModule mod_rewrite.c>
             RewriteEngine On
             RewriteBase /
@@ -44,8 +44,8 @@ jobs:
           password: ${{ secrets.FTP_PASS }}
           protocol: ftps
           port: 21
-          local-dir: dist/
-          server-dir: /
+          local-dir: dist/client/
+          server-dir: /public_html/meuagentedozero/
           timeout: 120000
           dangerous-clean-slate: false
           dry-run: false
