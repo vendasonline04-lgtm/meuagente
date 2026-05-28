@@ -61,6 +61,7 @@ function SalesPage() {
       <ValueStack />
       <OfferCTA />
       <Urgency />
+      <OfferCTA />
       <Guarantee />
       <FAQ />
       <Footer />
