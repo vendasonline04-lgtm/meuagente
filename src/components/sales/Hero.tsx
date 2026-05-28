@@ -38,16 +38,16 @@ export function Hero() {
 
         {/* Bullets */}
         <ul className="mt-6 flex flex-col items-center gap-2 text-lg text-white/90 sm:text-xl">
-          <li className="flex items-center gap-2">
-            <span className="text-alert text-sm">●</span>
+          <li className="flex items-start gap-2">
+            <span className="text-alert text-sm leading-7">●</span>
             Copiando e Colando Comandos Prontos
           </li>
-          <li className="flex items-center gap-2">
-            <span className="text-alert text-sm">●</span>
+          <li className="flex items-start gap-2">
+            <span className="text-alert text-sm leading-7">●</span>
             Usando IAs Gratuitas
           </li>
-          <li className="flex items-center gap-2">
-            <span className="text-alert text-sm">●</span>
+          <li className="flex items-start gap-2">
+            <span className="text-alert text-sm leading-7">●</span>
             Tudo Pronto em 37 Minutos
           </li>
         </ul>
