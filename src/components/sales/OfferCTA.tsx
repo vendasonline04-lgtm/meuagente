@@ -248,7 +248,9 @@ export function OfferCTA() {
             </div>
 
             <div className="mt-4">
-              <CTAButton variant="purple">Quero meu agente de IA agora</CTAButton>
+              <div className="animate-cta-pulse">
+                <CTAButton variant="purple">Quero meu agente de IA agora</CTAButton>
+              </div>
             </div>
 
             {/* Trust — linha única, ícone + texto */}
