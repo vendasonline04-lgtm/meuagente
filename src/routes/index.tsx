@@ -10,6 +10,7 @@ import { ForWho } from "@/components/sales/ForWho";
 import { ValueStack } from "@/components/sales/ValueStack";
 import { OfferCTA } from "@/components/sales/OfferCTA";
 import { Urgency } from "@/components/sales/Urgency";
+import { DeliverySteps } from "@/components/sales/DeliverySteps";
 import { Guarantee } from "@/components/sales/Guarantee";
 import { Recap } from "@/components/sales/Recap";
 import { FAQ } from "@/components/sales/FAQ";
@@ -60,6 +61,7 @@ function SalesPage() {
       <Recap />
       <ValueStack />
       <OfferCTA />
+      <DeliverySteps />
       <Urgency />
       <OfferCTA />
       <Guarantee />
