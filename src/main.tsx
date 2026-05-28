@@ -28,11 +28,11 @@ function App() {
       <FourSteps />
       <Deliverables />
       <ForWho />
+      <Recap />
       <ValueStack />
       <OfferCTA />
       <Urgency />
       <Guarantee />
-      <Recap />
       <FAQ />
       <Footer />
     </main>
