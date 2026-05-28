@@ -64,7 +64,7 @@ function SalesPage() {
       <DeliverySteps />
       <Urgency />
       <OfferCTA />
-      <Guarantee />
+      {/* <Guarantee /> */}
       <FAQ />
       <Footer />
     </main>
