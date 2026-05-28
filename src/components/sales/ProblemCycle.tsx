@@ -1,4 +1,4 @@
-import cicloBugado from "@/assets/ciclo-bugado.png";
+import cicloBugado from "@/assets/meninorealista.png";
 
 export function ProblemCycle() {
   return (
