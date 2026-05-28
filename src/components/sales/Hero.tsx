@@ -1,4 +1,4 @@
-import heroProduto from "@/assets/hero-produto.png";
+import heroProduto from "@/assets/mulherrealista.png";
 import robotMascot from "@/assets/robot-mascot.png";
 
 export function Hero() {
@@ -36,27 +36,16 @@ export function Hero() {
           Pare de perder horas tentando entender IA sozinho, e descubra como criar seu primeiro <span className="text-alert">Agente de IA do Zero</span> de forma simples, prática e sem programação: <span className="text-alert">em apenas 37 minutos!</span>
         </h1>
 
-        {/* Bullets */}
-        <ul className="mt-6 flex flex-col items-center gap-2 text-lg text-white/90 sm:text-xl">
-          <li className="flex items-center gap-2">
-            <span className="text-alert text-sm">●</span>
-            mesmo que você esteja perdido com tanta informação
-          </li>
-          <li className="flex items-center gap-2">
-            <span className="text-alert text-sm">●</span>
-            essa aula prática vai te mostrar exatamente o que fazer
-          </li>
-          <li className="flex items-center gap-2">
-            <span className="text-alert text-sm">●</span>
-            para finalmente colocar seu agente no ar
-          </li>
-        </ul>
+        {/* Subheadline */}
+        <p className="mt-6 max-w-2xl text-lg text-white/80 sm:text-xl">
+          Mesmo que hoje você esteja perdido com tanta informação, essa aula prática vai te mostrar exatamente o que fazer para finalmente colocar seu agente no ar.
+        </p>
 
         {/* Imagem */}
         <div className="mt-10 w-full flex items-center justify-center">
           <img
             src={heroProduto}
-            alt="Agente de IA do Zero — resultado prático em 37 minutos"
+            alt="Antes e depois — agente de IA transformando a rotina"
             className="w-full max-w-2xl rounded-2xl shadow-2xl"
           />
         </div>
