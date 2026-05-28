@@ -14,7 +14,7 @@ const steps = [
 function StepCard({ n, title, desc, icon }: { n: string; title: string; desc: string; icon: string }) {
   return (
     <div
-      className="group relative flex-1 rounded-2xl border border-border bg-card p-8 transition-all hover:-translate-y-1"
+      className="group relative flex flex-1 flex-col items-center text-center rounded-2xl border border-border bg-card p-8 transition-all hover:-translate-y-1"
       style={{ boxShadow: "var(--shadow-card)" }}
     >
       <img src={icon} alt="" aria-hidden="true" className="h-12 w-12 object-contain" />
@@ -32,7 +32,7 @@ function Arrow() {
       src={setaLaranja}
       alt=""
       aria-hidden="true"
-      className="h-14 w-14 shrink-0 rotate-90 self-center md:h-28 md:w-28 md:rotate-0"
+      className="hidden md:block h-28 w-28 shrink-0 self-center"
     />
   );
 }
