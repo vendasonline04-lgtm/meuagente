@@ -1,6 +1,4 @@
-import { CTAButton } from "./CTAButton";
-
-import heroProduto from "@/assets/meninafelizbloco1.png";
+import heroProduto from "@/assets/antesedepoismenina.png";
 import robotMascot from "@/assets/robot-mascot.png";
 
 export function Hero() {
@@ -12,10 +10,10 @@ export function Hero() {
       <div className="absolute inset-0 opacity-20" style={{
         backgroundImage: "radial-gradient(circle at 20% 20%, rgba(109,28,195,0.6), transparent 50%), radial-gradient(circle at 80% 80%, rgba(255,122,0,0.25), transparent 50%)"
       }} />
-      <div className="relative mx-auto max-w-6xl">
+      <div className="relative mx-auto max-w-6xl flex flex-col items-center text-center">
 
         {/* Logo no topo: robô + texto */}
-        <div className="mb-6 flex items-center justify-center gap-2 sm:gap-3">
+        <div className="mb-8 flex items-center justify-center gap-2 sm:gap-3">
           <img
             src={robotMascot}
             alt="Mascote Agente de IA"
@@ -33,41 +31,25 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="flex flex-col items-center gap-12 md:flex-row md:items-center md:gap-16">
+        {/* Headline */}
+        <h1 className="text-3xl font-bold leading-[1.1] sm:text-4xl md:text-[2.6rem] text-white max-w-4xl">
+          Pare de perder horas tentando entender IA sozinho, e descubra como criar seu primeiro <span className="text-alert">Agente de IA do Zero</span> de forma simples, prática e sem programação: <span className="text-alert">em apenas 37 minutos!</span>
+        </h1>
 
-          {/* Coluna esquerda — texto */}
-          <div className="flex-1 text-center md:text-left">
-            <h1 className="text-3xl font-bold leading-[1.1] sm:text-4xl md:text-[2.6rem] text-white">
-              Pare de perder horas tentando entender IA sozinho, e descubra como criar seu primeiro <span className="text-alert">Agente de IA do Zero</span> de forma simples, prática e sem programação: <span className="text-alert">em apenas 37 minutos!</span>
-            </h1>
-            <p className="mt-6 max-w-xl text-lg text-white/80 sm:text-xl">
-              Mesmo que hoje você esteja perdido com tanta informação, essa aula prática vai te mostrar exatamente o que fazer para finalmente colocar seu agente no ar.
-            </p>
+        {/* Subheadline */}
+        <p className="mt-6 max-w-2xl text-lg text-white/80 sm:text-xl">
+          Mesmo que hoje você esteja perdido com tanta informação, essa aula prática vai te mostrar exatamente o que fazer para finalmente colocar seu agente no ar.
+        </p>
 
-            {/* Imagem — aparece aqui só no mobile, some no desktop */}
-            <div className="mt-8 flex items-center justify-center md:hidden">
-              <img
-                src={heroProduto}
-                alt="Ganhei tempo com meu agente, ele faz tudo por mim!"
-                className="w-full max-w-lg rounded-2xl shadow-2xl"
-              />
-            </div>
-
-            <div className="mt-10">
-              <CTAButton variant="orange" className="text-lg text-center">Preciso de um agente de IA urgente</CTAButton>
-            </div>
-          </div>
-
-          {/* Coluna direita — imagem só no desktop */}
-          <div className="hidden md:flex flex-1 items-center justify-center">
-            <img
-              src={heroProduto}
-              alt="Ganhei tempo com meu agente, ele faz tudo por mim!"
-              className="w-full max-w-lg rounded-2xl shadow-2xl"
-            />
-          </div>
-
+        {/* Imagem */}
+        <div className="mt-10 w-full flex items-center justify-center">
+          <img
+            src={heroProduto}
+            alt="Antes e depois — agente de IA transformando a rotina"
+            className="w-full max-w-2xl rounded-2xl shadow-2xl"
+          />
         </div>
+
       </div>
     </section>
   );
