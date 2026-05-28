@@ -29,8 +29,8 @@ const items = [
   {
     image: proferramentas,
     imagePosition: "right" as const,
-    title: "Lista das 5 ferramentas gratuitas mais usadas para criar agentes",
-    desc: "As ferramentas gratuitas que estão acelerando quem entrou cedo no mercado de IA.",
+    title: "Lista de ferramentas gratuitas",
+    desc: "Ferramentas que aceleram seu resultado",
     premium: false,
   },
   {
