@@ -1,32 +1,34 @@
-import meninoFeliz from "@/assets/menino-feliz.png";
+function WarningIcon({ className }: { className?: string }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 112" className={className} aria-hidden="true">
+      <polygon points="60,6 116,104 4,104" fill="#C89000" opacity="0.5" />
+      <polygon points="60,10 112,102 8,102" fill="#FFD000" />
+      <polygon points="60,10 8,102 20,102 60,22" fill="#FFE033" />
+      <polygon points="60,10 60,22 112,102 104,102" fill="#FFC200" />
+      <polygon points="60,6 116,104 4,104" fill="none" stroke="#E6A800" strokeWidth="2.5" strokeLinejoin="round" />
+      <polygon points="60,18 80,54 40,54" fill="white" opacity="0.18" />
+      <rect x="54.5" y="42" width="11" height="30" rx="5.5" fill="#111111" />
+      <circle cx="60" cy="84" r="6.5" fill="#111111" />
+    </svg>
+  );
+}
 
 export function Solution() {
   return (
     <section className="bg-secondary px-4 py-20 text-secondary-foreground">
-      <div className="mx-auto max-w-3xl text-center">
-        <h2 className="text-balance text-3xl font-bold leading-tight sm:text-4xl md:text-5xl">
-          O problema não é falta de informação.
-        </h2>
-        <p className="mt-6 text-xl text-white/85">
-          É informação demais, sem saber por onde começar. Em 37 minutos, você mesmo constrói seu agente de IA do zero, sem travar, sem precisar de ajuda.
-        </p>
-
-        <div className="mt-10 rounded-2xl bg-white/5 p-8 ring-1 ring-white/10 backdrop-blur">
-          <p className="text-lg italic text-white/90 font-bold">
-            Imagina só criar seu agente do zero sozinho, do conforto da sua casa, no seu próprio computador...
-          </p>
-
-          <div className="my-6 flex justify-center">
-            <img
-              src={meninoFeliz}
-              alt="Pessoa feliz com seu agente de IA funcionando"
-              className="w-full max-w-2xl rounded-2xl"
-            />
+      <div className="mx-auto max-w-3xl">
+        <div className="flex items-center gap-6 rounded-2xl bg-white p-8 text-center">
+          <div className="shrink-0">
+            <WarningIcon className="w-44 sm:w-60" />
           </div>
-
-          <p className="mt-3 text-xl font-bold text-white">
-            Agora você pode criar vários agentes sem travar! Essa sensação está a <span className="text-alert">37 minutos</span> de distância.
-          </p>
+          <div className="flex flex-col items-center gap-4">
+            <p className="text-base text-foreground sm:text-lg font-bold">
+              O problema não é falta de informação, é informação demais...
+            </p>
+            <h2 className="text-balance text-xl font-bold leading-tight text-foreground sm:text-2xl md:text-3xl">
+              E se eu te dissesse que você pode ter um <span className="text-alert">agente de IA</span> que <span className="text-alert">resolve tudo pra você</span>?
+            </h2>
+          </div>
         </div>
       </div>
     </section>
