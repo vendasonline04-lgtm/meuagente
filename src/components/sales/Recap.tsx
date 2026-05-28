@@ -1,6 +1,3 @@
-import { Zap, ShieldCheck } from "lucide-react";
-import { CTAButton } from "./CTAButton";
-
 const items = [
   { label: "Aula de 37 minutos: do zero ao agente rodando", price: "R$ 197" },
   { label: "Checklist de configuração", price: "R$ 87" },
@@ -11,56 +8,31 @@ const items = [
 
 export function Recap() {
   return (
-    <section className="bg-secondary px-4 py-20 text-secondary-foreground">
+    <section className="bg-secondary px-4 py-14 text-white">
       <div className="mx-auto max-w-3xl text-center">
         <h2 className="text-3xl font-bold sm:text-4xl">
-          Tudo que você recebe por R$ 67:
+          Recapitulando, veja tudo que você vai receber:
         </h2>
 
         <ul className="mx-auto mt-10 max-w-xl space-y-3 text-left">
           {items.map((it, i) => (
-            <li key={i} className="flex items-center gap-3 rounded-lg bg-white/5 p-4 ring-1 ring-white/10">
-              <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-alert">
+            <li key={i} className="flex items-center gap-3 rounded-lg bg-white p-4">
+              <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-green-500">
                 <svg viewBox="0 0 10 10" className="h-3 w-3" fill="none" aria-hidden="true">
                   <path d="M2 5l2.5 2.5 3.5-4" stroke="white" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </span>
-              <span className="flex-1 text-lg">{it.label}</span>
-              <span className="shrink-0 font-bold text-alert">{it.price}</span>
+              <span className="flex-1 text-lg text-foreground">{it.label}</span>
+              <span className="shrink-0 font-bold text-red-600 line-through">{it.price}</span>
             </li>
           ))}
         </ul>
 
-        <p className="mt-10 text-xl">
-          De <span className="line-through opacity-70">R$ 445</span> por apenas
-        </p>
-
-        {/* Preço com parcelamento em destaque */}
-        <div className="mt-3 flex flex-col items-center gap-1">
-          <div className="relative flex items-baseline gap-1">
-            <span className="absolute left-0 right-0 -top-5 text-center text-sm font-semibold text-white/60">10x de</span>
-            <span className="font-display text-5xl font-bold leading-none text-alert">
-              R$ 8,12
-            </span>
-          </div>
-          <span className="text-base font-semibold text-white/60">OU</span>
-          <span className="text-xl font-bold text-white/80">R$ 67,00 à vista</span>
-        </div>
-
-        <div className="mt-8">
-          <CTAButton>Preciso de um agente de IA urgente</CTAButton>
-        </div>
-
-        <div className="mt-6 flex flex-wrap items-center justify-center gap-6 text-sm font-semibold">
-          <span className="inline-flex items-center gap-2 text-alert">
-            <Zap className="h-4 w-4" /> Acesso Imediato
-          </span>
-          <span className="inline-flex items-center gap-2 text-alert">
-            <ShieldCheck className="h-4 w-4" /> Garantia de 7 dias
-          </span>
-          <span className="inline-flex items-center gap-2 text-alert">
-            Acesso Vitalício
-          </span>
+        <div className="mx-auto mt-4 max-w-xl rounded-xl border-2 border-white/30 bg-white px-6 py-5 text-center">
+          <p className="text-base font-semibold text-foreground sm:text-lg">
+            Tudo isso você pagaria um total de:{" "}
+            <span className="text-4xl font-extrabold text-red-600 line-through">R$ 445</span>
+          </p>
         </div>
       </div>
     </section>
