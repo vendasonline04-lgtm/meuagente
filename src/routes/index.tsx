@@ -54,7 +54,7 @@ function SalesPage() {
       <Hero />
       <Testimonials />
       <ProblemCycle />
-      <Solution />
+      {/* <Solution /> */}
       <FourSteps />
       <Deliverables />
       <ForWho />
