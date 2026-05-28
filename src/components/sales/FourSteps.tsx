@@ -1,19 +1,23 @@
 import setaLaranja from "@/assets/seta-laranja.png";
+import configuraambiente from "@/assets/configuraambiente.png";
+import defineoambiente from "@/assets/defineoambiente.png";
+import conecta from "@/assets/conecta.png";
+import funcionando from "@/assets/funcionando.png";
 
 const steps = [
-  { n: "01", title: "Configura o ambiente", desc: "" },
-  { n: "02", title: "Define o objetivo e o comportamento do agente", desc: "" },
-  { n: "03", title: "Conecta as ferramentas e testa ao vivo", desc: "" },
-  { n: "04", title: "Seu agente está rodando. Você criou.", desc: "" },
+  { n: "01", title: "Configura o ambiente", desc: "", icon: configuraambiente },
+  { n: "02", title: "Define o objetivo e o comportamento do agente", desc: "", icon: defineoambiente },
+  { n: "03", title: "Conecta as ferramentas e testa ao vivo", desc: "", icon: conecta },
+  { n: "04", title: "Seu agente está rodando. Você criou.", desc: "", icon: funcionando },
 ];
 
-function StepCard({ n, title, desc }: { n: string; title: string; desc: string }) {
+function StepCard({ n, title, desc, icon }: { n: string; title: string; desc: string; icon: string }) {
   return (
     <div
       className="group relative flex-1 rounded-2xl border border-border bg-card p-8 transition-all hover:-translate-y-1"
       style={{ boxShadow: "var(--shadow-card)" }}
     >
-      <div className="font-display text-5xl font-bold text-accent/20">{n}</div>
+      <img src={icon} alt="" aria-hidden="true" className="h-12 w-12 object-contain" />
       <h3 className="mt-3 text-xl font-bold text-primary">
         Passo {parseInt(n)} → {title}
       </h3>
