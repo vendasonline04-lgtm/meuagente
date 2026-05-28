@@ -35,7 +35,7 @@ function App() {
       <DeliverySteps />
       <Urgency />
       <OfferCTA />
-      <Guarantee />
+      {/* <Guarantee /> */}
       <FAQ />
       <Footer />
     </main>
