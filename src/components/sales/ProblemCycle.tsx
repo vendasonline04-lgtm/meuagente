@@ -11,11 +11,11 @@ export function ProblemCycle() {
           Hoje você vive um ciclo que não te deixa sair do lugar.
         </p>
 
-        <div className="mt-8 flex justify-center">
+        <div className="mt-8 flex justify-center -mx-4 sm:mx-0">
           <img
             src={cicloBugado}
             alt="Ciclo de frustração ao tentar aprender agentes de IA sozinho"
-            className="w-full max-w-2xl rounded-2xl"
+            className="w-full max-w-2xl rounded-2xl sm:rounded-2xl"
           />
         </div>
 
