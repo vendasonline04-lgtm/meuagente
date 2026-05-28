@@ -39,9 +39,6 @@ export function Urgency() {
         <h2 className="text-3xl font-bold sm:text-4xl">
           Agora você tem 2 opções:
         </h2>
-        <p className="mt-4 text-lg text-white/70">
-          A escolha é sua. O futuro do seu negócio depende do que você decide agora.
-        </p>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2">
           {/* Opção 1 — sem agente */}
@@ -104,8 +101,8 @@ export function Urgency() {
         </div>
 
         <p className="mt-12 text-lg font-semibold text-white sm:text-xl">
-          Eu sei e você também sabe, clique já no botão abaixo e acesse agora mesmo seu{" "}
-          <span className="text-alert">Agente de IA em 37 minutos</span>
+          Eu sei e você também sabe, a opção 2 é a mais inteligente. Clique já no botão abaixo e acesse agora mesmo seu{" "}
+          <span className="text-alert">Agente de IA</span>.
         </p>
       </div>
     </section>
