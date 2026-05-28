@@ -17,9 +17,9 @@ export function Solution() {
   return (
     <section className="bg-secondary px-4 py-20 text-secondary-foreground">
       <div className="mx-auto max-w-3xl">
-        <div className="flex items-center gap-6 rounded-2xl bg-white p-8 text-center">
+        <div className="flex flex-col items-center gap-6 rounded-2xl bg-white p-8 text-center md:flex-row md:text-center">
           <div className="shrink-0">
-            <WarningIcon className="w-44 sm:w-60" />
+            <WarningIcon className="w-28 sm:w-44 md:w-60" />
           </div>
           <div className="flex flex-col items-center gap-4">
             <p className="text-base text-foreground sm:text-lg font-bold">
