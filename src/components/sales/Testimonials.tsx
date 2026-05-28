@@ -38,16 +38,16 @@ export function Testimonials() {
           {items.map((t, i) => (
             <figure
               key={i}
-              className="flex flex-col rounded-2xl bg-white/5 p-6 backdrop-blur ring-1 ring-white/10"
+              className="flex flex-col rounded-2xl bg-muted p-6"
             >
               <div className="flex items-start gap-3">
                 <Quote className="h-8 w-8 shrink-0 text-alert" />
-                <p className="font-bold text-white leading-snug">{t.highlight}</p>
+                <p className="font-bold text-primary leading-snug">{t.highlight}</p>
               </div>
-              <blockquote className="mt-4 flex-1 text-base leading-relaxed">
+              <blockquote className="mt-4 flex-1 text-base leading-relaxed text-foreground">
                 "{t.text}"
               </blockquote>
-              <figcaption className="mt-6 border-t border-white/10 pt-4">
+              <figcaption className="mt-6 border-t border-foreground/10 pt-4">
                 <div className="flex items-center gap-3">
                   <img
                     src={t.img}
@@ -55,8 +55,8 @@ export function Testimonials() {
                     className="h-10 w-10 rounded-full object-cover shrink-0"
                   />
                   <div>
-                    <div className="font-bold">{t.author}</div>
-                    <div className="text-sm text-white/70">{t.role}</div>
+                    <div className="font-bold text-primary">{t.author}</div>
+                    <div className="text-sm text-foreground/70">{t.role}</div>
                   </div>
                 </div>
               </figcaption>
