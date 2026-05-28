@@ -123,3 +123,14 @@
     letter-spacing: -0.02em;
   }
 }
+
+@keyframes cta-pulse {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.06); }
+}
+.animate-cta-pulse {
+  animation: cta-pulse 0.9s ease-in-out infinite;
+  transform-origin: center;
+  will-change: transform;
+  display: inline-block;
+}
