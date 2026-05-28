@@ -1,13 +1,10 @@
-Mover o bloco `Recap` ("Recapitulando…") para logo abaixo do bloco `ForWho` ("O Agente de IA do Zero em 37 minutos é para você que:").
+Adicionar uma segunda instância do bloco `OfferCTA` logo abaixo do `Urgency` ("Agora você tem 2 opções").
 
 ## Alterações
 
-**`src/main.tsx`** — hoje a ordem é:
-`ForWho → ValueStack → OfferCTA → Urgency → Guarantee → Recap → FAQ → Footer`
+**`src/main.tsx`** — nova ordem:
+`... → Urgency → OfferCTA (repetido) → Guarantee → FAQ → Footer`
 
-Nova ordem:
-`ForWho → Recap → ValueStack → OfferCTA → Urgency → Guarantee → FAQ → Footer`
+**`src/routes/index.tsx`** — já contém `OfferCTA` repetido após `Urgency`; permanece inalterado.
 
-**`src/routes/index.tsx`** — já está com `Recap` logo após `ForWho`, mas confirmo que permanece igual para manter consistência entre as duas entradas (SPA via `main.tsx` no deploy Hostinger e rota TanStack no preview Lovable).
-
-Nenhuma mudança de conteúdo, estilo ou lógica — apenas reordenação de componentes.
+Sem mudanças de conteúdo, estilo ou lógica — apenas reuso do componente existente.
