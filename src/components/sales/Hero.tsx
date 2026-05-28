@@ -33,13 +33,24 @@ export function Hero() {
 
         {/* Headline */}
         <h1 className="text-3xl font-bold leading-[1.1] sm:text-4xl md:text-[2.6rem] text-white max-w-4xl">
-          Pare de perder horas tentando entender IA sozinho, e descubra como criar seu primeiro <span className="text-alert">Agente de IA do Zero</span> de forma simples, prática e sem programação: <span className="text-alert">em apenas 37 minutos!</span>
+          Descubra como criar um <span className="text-alert">Agente de IA do Zero</span>, em apenas <span className="text-alert">37 minutos</span>, capaz de fazer tudo que você quiser, mesmo sem saber programar.
         </h1>
 
-        {/* Subheadline */}
-        <p className="mt-6 max-w-2xl text-lg text-white/80 sm:text-xl">
-          Mesmo que hoje você esteja perdido com tanta informação, essa aula prática vai te mostrar exatamente o que fazer para finalmente colocar seu agente no ar.
-        </p>
+        {/* Bullets */}
+        <ul className="mt-6 flex flex-col items-center gap-2 text-lg text-white/90 sm:text-xl">
+          <li className="flex items-center gap-2">
+            <span className="text-alert text-sm">●</span>
+            Copiando e Colando Comandos Prontos
+          </li>
+          <li className="flex items-center gap-2">
+            <span className="text-alert text-sm">●</span>
+            Usando IAs Gratuitas
+          </li>
+          <li className="flex items-center gap-2">
+            <span className="text-alert text-sm">●</span>
+            Tudo Pronto em 37 Minutos
+          </li>
+        </ul>
 
         {/* Imagem */}
         <div className="mt-10 w-full flex items-center justify-center">
