@@ -1,28 +1,19 @@
 ## Objetivo
-Fazer o botão CTA dos blocos OfferCTA (oferta 1 e oferta 2) pulsar continuamente — escalando para cima e para baixo de forma rápida — para chamar mais atenção.
+Adicionar o link de checkout do Cakto no botão CTA da oferta.
 
 ## Mudanças
 
-**1. `src/styles.css`** — adicionar keyframe `cta-pulse` e a classe utilitária `.animate-cta-pulse`:
+**1. `src/components/sales/OfferCTA.tsx`** — passar o href para o `<CTAButton>`:
 
-```css
-@keyframes cta-pulse {
-  0%, 100% { transform: scale(1); }
-  50%      { transform: scale(1.06); }
-}
-.animate-cta-pulse {
-  animation: cta-pulse 0.9s ease-in-out infinite;
-  transform-origin: center;
-  will-change: transform;
-}
+```tsx
+<CTAButton variant="purple" href="https://pay.cakto.com.br/qjujfnv_871799">
+  Quero meu agente de IA agora
+</CTAButton>
 ```
 
-Pulso rápido (~0.9s) com aumento/diminuição visível (~6%), suave (ease-in-out) e infinito.
-
-**2. `src/components/sales/OfferCTA.tsx`** — envolver o `<CTAButton>` (linha 251) numa `div` com `className="animate-cta-pulse inline-block"` para o efeito ser aplicado em todas as instâncias de `<OfferCTA />` (oferta 1 e oferta 2 já reutilizam o mesmo componente, então uma única alteração cobre os dois).
+O componente `CTAButton` já aceita a prop `href` (default: `"#oferta"`). Apenas adicionar o link de checkout no botão da oferta.
 
 ## Detalhes
-- Escala 1 → 1.06 → 1 dá o efeito "respirando" sem deslocar o layout.
-- `transform-origin: center` mantém o botão centralizado durante o pulso.
-- Não altera cor, sombra nem texto do botão — apenas adiciona o movimento.
-- Não toca em `CTAButton.tsx` para não afetar usos do botão fora da seção de oferta.
+- Apenas 1 botão CTA na oferta (linha 252 de `OfferCTA.tsx`).
+- O componente `CTAButton` já renderiza um `<a>` com a prop `href`, então não precisa de alteração no componente base.
+- O link abrirá o checkout do Cakto em nova navegação (padrão do `<a href>`).

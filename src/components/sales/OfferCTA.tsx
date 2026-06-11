@@ -249,7 +249,7 @@ export function OfferCTA() {
 
             <div className="mt-4">
               <div className="animate-cta-pulse">
-                <CTAButton variant="purple">Quero meu agente de IA agora</CTAButton>
+                <CTAButton variant="purple" href="https://pay.cakto.com.br/qjujfnv_871799">Quero meu agente de IA agora</CTAButton>
               </div>
             </div>
 
