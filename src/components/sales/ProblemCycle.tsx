@@ -1,4 +1,4 @@
-import cicloBugado from "@/assets/meninorealista.png";
+import cicloBugado from "@/assets/meninorealista.webp";
 
 export function ProblemCycle() {
   return (
@@ -16,6 +16,9 @@ export function ProblemCycle() {
             src={cicloBugado}
             alt="Ciclo de frustração ao tentar aprender agentes de IA sozinho"
             className="w-full max-w-2xl rounded-2xl sm:rounded-2xl"
+            width={1024}
+            height={884}
+            loading="lazy"
           />
         </div>
 

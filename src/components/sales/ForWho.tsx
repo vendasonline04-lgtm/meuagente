@@ -1,4 +1,4 @@
-import doresMenina from "@/assets/meninapreocupadarealista.png";
+import doresMenina from "@/assets/meninapreocupadarealista.webp";
 
 const items = [
   { emoji: "😵", text: "Fica perdida com tanta informação e não sai do lugar" },
@@ -37,6 +37,9 @@ export function ForWho() {
               src={doresMenina}
               alt="Mulher frustrada tentando entender IA"
               className="w-full max-w-xs rounded-2xl shadow-lg md:max-w-none"
+              width={640}
+              height={1137}
+              loading="lazy"
             />
           </div>
 

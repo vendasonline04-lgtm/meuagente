@@ -1,5 +1,5 @@
-import heroProduto from "@/assets/mulherrealista.png";
-import robotMascot from "@/assets/robot-mascot.png";
+import heroProduto from "@/assets/mulherrealista.webp";
+import robotMascot from "@/assets/robot-mascot.webp";
 
 export function Hero() {
   return (
@@ -18,6 +18,9 @@ export function Hero() {
             src={robotMascot}
             alt="Mascote Agente de IA"
             className="h-14 w-auto object-contain sm:h-18 drop-shadow-[0_0_25px_rgba(109,28,195,0.6)]"
+            width={200}
+            height={200}
+            fetchPriority="high"
           />
           <div className="flex flex-col items-center leading-none">
             <span className="font-display text-base font-bold text-white sm:text-xl tracking-tight">
@@ -58,6 +61,9 @@ export function Hero() {
             src={heroProduto}
             alt="Antes e depois — agente de IA transformando a rotina"
             className="w-full max-w-2xl rounded-2xl shadow-2xl"
+            width={1024}
+            height={1280}
+            fetchPriority="high"
           />
         </div>
 

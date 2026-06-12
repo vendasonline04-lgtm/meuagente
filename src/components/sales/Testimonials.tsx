@@ -1,7 +1,7 @@
 import { Quote } from "lucide-react";
-import rafaelImg from "@/assets/RafaelDep.png";
-import camilaImg from "@/assets/CamilaDep.png";
-import lucasImg from "@/assets/LucasDep.png";
+import rafaelImg from "@/assets/RafaelDep.webp";
+import camilaImg from "@/assets/CamilaDep.webp";
+import lucasImg from "@/assets/LucasDep.webp";
 
 const items = [
   {
@@ -53,6 +53,9 @@ export function Testimonials() {
                     src={t.img}
                     alt={t.author}
                     className="h-10 w-10 rounded-full object-cover shrink-0"
+                    width={40}
+                    height={40}
+                    loading="lazy"
                   />
                   <div>
                     <div className="font-bold text-primary">{t.author}</div>

@@ -1,8 +1,8 @@
-import procomputador from "@/assets/procomputador.png";
-import prochecklist from "@/assets/prochecklist.png";
-import propromt from "@/assets/propromt.png";
-import proferramentas from "@/assets/logodasferramentas.png";
-import proagente from "@/assets/proagente.png";
+import procomputador from "@/assets/procomputador.webp";
+import prochecklist from "@/assets/prochecklist.webp";
+import propromt from "@/assets/propromt.webp";
+import proferramentas from "@/assets/logodasferramentas.webp";
+import proagente from "@/assets/proagente.webp";
 
 const items = [
   {
@@ -61,6 +61,9 @@ export function Deliverables() {
                   src={it.image}
                   alt={it.title}
                   className="w-2/5 shrink-0 object-cover rounded-xl"
+                  width={600}
+                  height={600}
+                  loading="lazy"
                 />
               )}
               <div className="flex flex-1 flex-col justify-center p-5">
@@ -72,6 +75,9 @@ export function Deliverables() {
                   src={it.image}
                   alt={it.title}
                   className="w-2/5 shrink-0 object-cover rounded-xl"
+                  width={600}
+                  height={600}
+                  loading="lazy"
                 />
               )}
             </li>
