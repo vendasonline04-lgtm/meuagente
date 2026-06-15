@@ -28,7 +28,7 @@ const faqs = [
   },
   {
     q: "Não sei usar nada de N8N. Qual ferramenta de IA usaremos?",
-    a: "Para esta aula, usaremos o Claude Code plano PRO. Dentro dele usaremos várias ferramentas gratuitas.",
+    a: "Não se preocupe pois não usaremos N8N. Faremos seu agente de forma simples e prática usando o Claude Code Pro, além de várias ferramentas gratuitas.",
   },
 ];
 
