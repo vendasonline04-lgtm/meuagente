@@ -27,8 +27,8 @@ const faqs = [
     a: "Sim. Pagamento processado com criptografia SSL. Seus dados estão protegidos.",
   },
   {
-    q: "Não sei usar nada de N8N. Qual ferramenta de IA usaremos?",
-    a: "Não se preocupe pois não usaremos N8N. Faremos seu agente de forma simples e prática usando o Claude Code Pro, além de várias ferramentas gratuitas.",
+    q: "Vou precisar aprender alguma ferramenta complicada de automação?",
+    a: "Não. Vamos usar o Claude Code Pro, uma IA simples de usar, parecida com um chat. Na aula eu te mostro passo a passo: você copia, cola e roda. Zero complicação.",
   },
 ];
 
