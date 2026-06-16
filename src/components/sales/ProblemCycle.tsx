@@ -28,11 +28,11 @@ export function ProblemCycle() {
 
         <ul className="mt-4 space-y-3 text-base sm:text-lg">
           {[
-            "Tem gente ganhando dinheiro criando agentes para clientes",
-            "Tem gente automatizando processos e cobrando por isso",
-            "Tem gente que saiu do zero e já tem portfólio",
-            "Tem gente ganhando tempo com agente, sem fazer trabalho repetitivo",
-            "Tem gente economizando dinheiro com IA, pois conhece o fluxo certo",
+            "Você tenta sair do lugar mas sempre trava no mesmo ponto",
+            "Você consome conteúdo sem parar e continua sem criar nada",
+            "Você faz tarefas repetitivas que poderiam estar no piloto automático",
+            "Você vê seu tempo sendo consumido por coisas que uma IA poderia resolver",
+            "Você quer criar algo real, mas não sabe mais que ordem seguir",
           ].map((s, i) => (
             <li key={i} className="flex items-start gap-3">
               <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-alert">
