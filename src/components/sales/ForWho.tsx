@@ -1,12 +1,12 @@
 import doresMenina from "@/assets/meninapreocupadarealista.webp";
 
 const items = [
-  { emoji: "😩", text: "Faz tudo sozinho e sente que o dia nunca rende" },
+  { emoji: "😩", text: "Faz tudo sozinha e sente que o dia nunca rende" },
   { emoji: "🔥", text: "Vive apagando incêndios e nunca consegue adiantar o trabalho" },
   { emoji: "⏳", text: "Não tem tempo para focar no que realmente gera resultado" },
   { emoji: "🔄", text: "Perde horas fazendo tarefas que poderiam ser automáticas" },
   { emoji: "💸", text: "Vê tempo e dinheiro escapando todos os dias" },
-  { emoji: "🤯", text: "Está cansado de ter tudo dependendo de você" },
+  { emoji: "🤯", text: "Está cansada de ter tudo dependendo de você" },
   { emoji: "🚀", text: "Quer produzir mais sem trabalhar mais horas" },
   { emoji: "🤖", text: "Gostaria de ter alguém trabalhando por você 24 horas por dia" },
 ];
