@@ -29,7 +29,7 @@ const items = [
   {
     image: proferramentas,
     imagePosition: "right" as const,
-    title: "Lista de ferramentas gratuitas",
+    title: "Lista de IAs gratuitas",
     desc: "Ferramentas que aceleram seu resultado",
     premium: false,
   },
