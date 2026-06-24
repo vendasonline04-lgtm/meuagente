@@ -36,7 +36,7 @@ export function Hero() {
 
         {/* Headline */}
         <h1 className="text-3xl font-bold leading-[1.1] sm:text-4xl md:text-[2.6rem] text-white max-w-4xl">
-          Pare de perder tempo com tarefas manuais e repetitivas e crie um <span className="text-alert">Agente de IA do Zero</span>, em apenas <span className="text-alert">37 minutos</span>, capaz de fazer tudo por você, mesmo que você não saiba programar.
+          Pare de perder tempo com tarefas manuais e repetitivas e crie um <span className="text-alert">Funcionário Digital</span>, que trabalha <span className="text-alert">24 horas por dia</span>, mesmo que você não saiba nada de IA.
         </h1>
 
         {/* Bullets */}
