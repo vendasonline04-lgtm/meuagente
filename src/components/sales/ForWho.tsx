@@ -1,14 +1,14 @@
 import doresMenina from "@/assets/meninapreocupadarealista.webp";
 
 const items = [
-  { emoji: "😵", text: "Fica perdida com tanta informação e não sai do lugar" },
-  { emoji: "🤬", text: "Tenta entender por conta própria e sempre trava no mesmo ponto" },
-  { emoji: "💸", text: "Vê outras pessoas ganhando dinheiro com agentes enquanto você ainda está no conteúdo" },
-  { emoji: "🤔", text: "Quer criar algo real, mas quando vai ver já não sabe mais que ordem seguir" },
-  { emoji: "😩", text: "Está cansada de consumir um monte de conteúdo e fica só perdendo o foco" },
-  { emoji: "⏳", text: "Perde tempo e dinheiro à toa por não saber usar IA. Faz uso de ferramentas confusas com prompts ruins." },
-  { emoji: "🔄", text: "Faz tarefas repetitivas e precisa ganhar tempo, para focar no que realmente importa" },
-  { emoji: "⏰", text: "Vê o seu tempo sendo consumido à toa, por algo que você podia programar pra fazer no seu lugar..." },
+  { emoji: "😩", text: "Faz tudo sozinho e sente que o dia nunca rende" },
+  { emoji: "🔥", text: "Vive apagando incêndios e nunca consegue adiantar o trabalho" },
+  { emoji: "⏳", text: "Não tem tempo para focar no que realmente gera resultado" },
+  { emoji: "🔄", text: "Perde horas fazendo tarefas que poderiam ser automáticas" },
+  { emoji: "💸", text: "Vê tempo e dinheiro escapando todos os dias" },
+  { emoji: "🤯", text: "Está cansado de ter tudo dependendo de você" },
+  { emoji: "🚀", text: "Quer produzir mais sem trabalhar mais horas" },
+  { emoji: "🤖", text: "Gostaria de ter alguém trabalhando por você 24 horas por dia" },
 ];
 
 export function ForWho() {
