@@ -22,7 +22,7 @@ const items = [
   {
     image: propromt,
     imagePosition: "left" as const,
-    title: "Template de comando de sistema",
+    title: "Template pronto para criar seu funcionário digital",
     desc: "Copia, e cola. Não precisa criar do zero na próxima vez.",
     premium: true,
   },
