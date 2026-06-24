@@ -5,10 +5,10 @@ import conecta from "@/assets/conecta.png";
 import funcionando from "@/assets/funcionando.png";
 
 const steps = [
-  { n: "01", title: "Configura o ambiente", desc: "", icon: configuraambiente },
-  { n: "02", title: "Define o objetivo e o comportamento do agente", desc: "", icon: defineoambiente },
-  { n: "03", title: "Conecta as ferramentas e testa ao vivo", desc: "", icon: conecta },
-  { n: "04", title: "Seu agente está rodando. Você criou.", desc: "", icon: funcionando },
+  { n: "01", title: "Copie o modelo pronto\u00a0", desc: "", icon: configuraambiente },
+  { n: "02", title: "Defina o que seu agente deve fazer", desc: "", icon: defineoambiente },
+  { n: "03", title: "Conecte as ferramentas", desc: "", icon: conecta },
+  { n: "04", title: "Coloque seu agente pra trabalhar no seu lugar", desc: "", icon: funcionando },
 ];
 
 function StepCard({ n, title, desc, icon }: { n: string; title: string; desc: string; icon: string }) {
