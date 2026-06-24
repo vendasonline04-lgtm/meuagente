@@ -17,9 +17,9 @@ export function Solution() {
   return (
     <section className="bg-secondary px-4 py-20 text-secondary-foreground">
       <div className="mx-auto max-w-3xl">
-        <p className="text-balance mb-10 text-center text-xl font-bold leading-tight text-white sm:text-2xl md:text-3xl">
+        <h2 className="text-balance mb-10 text-center text-xl font-bold leading-tight text-white sm:text-2xl md:text-3xl">
           No fundo, você sabe que trabalha mais do que deveria, perde horas com tarefas repetitivas e ainda não sabe como usar a IA para ganhar tempo e dinheiro.
-        </p>
+        </h2>
         <div className="flex flex-col items-center gap-6 rounded-2xl bg-white p-8 text-center md:flex-row md:text-center">
           <div className="shrink-0">
             <WarningIcon className="w-28 sm:w-44 md:w-60" />
