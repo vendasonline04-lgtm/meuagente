@@ -31,7 +31,7 @@ export function ProblemCycle() {
             "Você trabalha mais do que deveria.",
             "Tudo depende de você.",
             "Tarefas repetitivas roubam horas do seu dia.",
-            "Falta tempo para o que gera resultado.",
+            "Você consome conteúdo e trava no mesmo ponto.",
             "Você está perdendo tempo e dinheiro.",
           ].map((s, i) => (
             <li key={i} className="flex items-start gap-3">
