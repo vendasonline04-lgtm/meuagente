@@ -21,7 +21,7 @@ import { Footer } from '@/components/sales/Footer'
 function App() {
   return (
     <main>
-      <UrgencyBar />
+      {/* <UrgencyBar /> */}
       <Hero />
       {/* <Testimonials /> */}
       <ProblemCycle />

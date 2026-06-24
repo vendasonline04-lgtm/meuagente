@@ -1,15 +1,15 @@
 const bad = [
-  "Vai continuar perdido, por ter tanta informação e não saber mais por onde começar",
-  "Vai continuar fazendo tarefas repetitivas e perdendo tempo com o que um agente poderia fazer no seu lugar",
-  "Vai perder dinheiro à toa, por gastar com ferramentas que você conhece pouco",
-  "Vai continuar vendo outras pessoas fazendo dinheiro com agentes, enquanto você fica para trás",
+  "Fazer tudo sozinho e seguir sobrecarregado",
+  "Continuar apagando incêndios",
+  "Perder horas, tempo e dinheiro",
+  "Trabalhar muito e avançar pouco",
 ];
 
 const good = [
-  "Vai ter clareza e direção para aplicar agentes de IA no seu negócio com estratégia",
-  "Vai automatizar tarefas repetitivas e ganhar tempo para focar no que realmente importa",
-  "Vai reduzir custos e aumentar resultados com as ferramentas certas e bem aplicadas",
-  "Vai sair na frente e construir um negócio mais inteligente, competitivo e escalável",
+  "Automatizar tarefas do dia a dia",
+  "Recuperar tempo para o que importa",
+  "Produzir mais, ganhar mais dinheiro, sem ter que trabalhar mais",
+  "Ter um Agente trabalhando por você",
 ];
 
 function XIcon() {
@@ -54,7 +54,7 @@ export function Urgency() {
               </span>
               <div>
                 <p className="text-base font-bold text-red-400">Opção 1:</p>
-                <p className="text-xl font-black text-white">Ficar sem Agente de IA</p>
+                <p className="text-xl font-black text-white">Continuar sem um Agente de IA</p>
               </div>
             </div>
             <ul className="space-y-0">
@@ -83,7 +83,7 @@ export function Urgency() {
               </span>
               <div>
                 <p className="text-base font-bold text-violet-400">Opção 2:</p>
-                <p className="text-xl font-black text-white">Ter um agente de IA</p>
+                <p className="text-xl font-black text-white">Ter um Agente de IA</p>
               </div>
             </div>
             <ul className="space-y-0">
