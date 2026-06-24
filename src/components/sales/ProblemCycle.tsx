@@ -5,7 +5,7 @@ export function ProblemCycle() {
     <section className="bg-background px-4 py-20 text-foreground">
       <div className="mx-auto max-w-3xl">
         <h2 className="text-balance text-center text-3xl font-bold leading-tight sm:text-4xl md:text-5xl">
-          Você não está parado por preguiça. Você está perdido.
+          Você não está sobrecarregado porque trabalha pouco. Você faz tudo sozinho.
         </h2>
         <p className="mt-6 text-center text-lg text-foreground/80">
           Hoje você vive um ciclo que não te deixa sair do lugar.
@@ -23,16 +23,16 @@ export function ProblemCycle() {
         </div>
 
         <p className="mt-10 text-center text-lg font-semibold">
-          E enquanto você tenta entender sozinho...
+          E no fundo você sabe:
         </p>
 
         <ul className="mt-4 space-y-3 text-base sm:text-lg">
           {[
-            "Você tenta sair do lugar mas sempre trava no mesmo ponto",
-            "Você consome conteúdo sem parar e continua sem criar nada",
-            "Você faz tarefas repetitivas que poderiam estar no piloto automático",
-            "Você vê seu tempo sendo consumido por coisas que uma IA poderia resolver",
-            "Você quer criar algo real, mas não sabe mais que ordem seguir",
+            "Você trabalha mais do que deveria.",
+            "Tudo depende de você.",
+            "Tarefas repetitivas roubam horas do seu dia.",
+            "Falta tempo para o que gera resultado.",
+            "Você está perdendo tempo e dinheiro.",
           ].map((s, i) => (
             <li key={i} className="flex items-start gap-3">
               <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-alert">
@@ -47,10 +47,10 @@ export function ProblemCycle() {
 
         <div className="mt-10 rounded-2xl border-l-4 border-alert bg-muted p-6">
           <p className="text-lg font-semibold text-primary">
-            A diferença entre você e eles não é talento.
+            A diferença entre você e quem já usa um Agente de IA não é inteligência.
           </p>
           <p className="mt-2 text-lg">
-            É que eles pararam de tentar entender e colocaram a mão na massa do jeito certo.
+            É que eles pararam de fazer tudo sozinhos e colocaram um Agente de IA que trabalha 24 horas por dia no lugar deles.
           </p>
         </div>
       </div>
