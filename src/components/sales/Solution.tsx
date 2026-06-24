@@ -30,15 +30,6 @@ export function Solution() {
             </h2>
           </div>
         </div>
-
-        <div className="mt-10 rounded-2xl border-l-4 border-alert bg-muted p-6">
-          <p className="text-lg font-semibold text-primary">
-            A diferença entre você e quem já usa um Agente de IA não é inteligência.
-          </p>
-          <p className="mt-2 text-lg text-primary">
-            É que eles pararam de fazer tudo sozinhos e colocaram um Agente de IA que trabalha 24 horas por dia no lugar deles.
-          </p>
-        </div>
       </div>
     </section>
   );
