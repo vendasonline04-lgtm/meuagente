@@ -59,7 +59,7 @@ export function FourSteps() {
         </div>
 
         <div className="mt-10 text-center text-lg">
-          <p className="font-semibold">Sem enrolação. Sem teoria desnecessária.</p>
+          <p className="font-semibold">Você não precisa entender de IA. Basta seguir os 4 passos..</p>
           <p className="mt-2 text-foreground/80">
             <span className="font-bold text-accent">37 minutos</span> do zero ao agente funcionando, pronto pra usar!
           </p>
