@@ -16,7 +16,7 @@ const items = [
     image: prochecklist,
     imagePosition: "right" as const,
     title: "Checklist de configuração",
-    desc: "Configure tudo sem travar, mesmo que nunca tenha criado um agente antes",
+    desc: "Configure tudo sem complicação, mesmo que nunca tenha criado um agente antes",
     premium: true,
   },
   {
