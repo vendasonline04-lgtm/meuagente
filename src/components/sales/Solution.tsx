@@ -38,7 +38,7 @@ export function Solution() {
           <p className="text-lg font-semibold text-primary">
             A diferença entre você e quem já usa um Agente de IA não é inteligência.
           </p>
-          <p className="mt-2 text-lg">
+          <p className="mt-2 text-lg text-primary">
             É que eles pararam de fazer tudo sozinhos e colocaram um Agente de IA que trabalha 24 horas por dia no lugar deles.
           </p>
         </div>
