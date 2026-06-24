@@ -8,7 +8,7 @@ export function ProblemCycle() {
           Você não está sobrecarregado porque trabalha pouco. Você faz tudo sozinho.
         </h2>
         <p className="mt-6 text-center text-lg text-foreground/80">
-          Hoje você vive um ciclo que não te deixa sair do lugar.
+          E por isso você fica pensando:
         </p>
 
         <div className="mt-8 flex justify-center -mx-4 sm:mx-0">
