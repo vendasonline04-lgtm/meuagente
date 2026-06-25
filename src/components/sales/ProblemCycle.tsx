@@ -1,4 +1,4 @@
-import cicloBugado from "@/assets/ruminacaomenino.webp";
+import cicloBugado from "@/assets/ruminacaoatual.webp";
 
 export function ProblemCycle() {
   return (
