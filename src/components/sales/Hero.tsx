@@ -34,9 +34,16 @@ export function Hero() {
           </div>
         </div>
 
+        {/* Faixa de destaque */}
+        <div className="mb-5 inline-block rounded-full bg-alert px-5 py-2">
+          <p className="text-base font-medium text-white">
+            Já imaginou ver seu dia render, sem que tudo dependa só de você?
+          </p>
+        </div>
+
         {/* Headline */}
         <h1 className="text-3xl font-bold leading-[1.1] sm:text-4xl md:text-[2.6rem] text-white max-w-4xl">
-          Pare de perder tempo com tarefas manuais e repetitivas e crie um <span className="text-alert">Funcionário Digital</span>, que trabalha <span className="text-alert">24 horas por dia</span>, mesmo que você não saiba nada de IA.
+          Pare de perder tempo com tarefas manuais e crie um <span className="text-alert">Agente de IA do Zero</span>, em apenas <span className="text-alert">37 minutos</span>, que resolve seu trabalho no piloto automático mesmo que você não saiba nada de programação.
         </h1>
 
         {/* Bullets */}
