@@ -21,6 +21,10 @@ export function ProblemCycle() {
             loading="lazy"
           />
         </div>
+
+        <p className="mt-6 text-center text-lg text-foreground/80">
+          Você trabalha o dia inteiro e fica com a sensação de que não conseguiu fazer nada.
+        </p>
       </div>
     </section>
   );
