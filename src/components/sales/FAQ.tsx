@@ -19,6 +19,10 @@ const faqs = [
     a: "Sim. A aula foi feita exatamente para quem nunca criou um agente. Você não precisa saber programar.",
   },
   {
+    q: "E se eu não souber conectar ferramentas?",
+    a: "Você não precisa saber. Todos os comandos e arquivos já estão prontos dentro do produto, você só vai copiar e colar onde eu mostro. Se você sabe abrir uma pasta no computador, você consegue.",
+  },
+  {
     q: "Quanto tempo vou ter acesso?",
     a: "Acesso vitalício. Pagou uma vez, acessa para sempre.",
   },
