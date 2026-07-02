@@ -31,6 +31,14 @@ const faqs = [
     a: "Não tem problema nenhum. O seu risco é zero. Você tem 7 dias de garantia incondicional para testar tudo. Se você achar que é difícil demais, ou simplesmente não gostar, basta me enviar um único e-mail. Eu devolvo 100% do seu dinheiro, sem perguntas, sem burocracia.",
   },
   {
+    q: "Quanto tempo vou ter acesso?",
+    a: "Acesso vitalício. Pagou uma vez, acessa para sempre — sem prazo de expiração.",
+  },
+  {
+    q: "Tenho que pagar mensalidade?",
+    a: "Não. O pagamento é único. Você paga uma vez e nunca mais precisa pagar nada para continuar tendo acesso.",
+  },
+  {
     q: "É seguro fazer o pagamento por aqui?",
     a: "Totalmente seguro. Nós usamos uma plataforma de pagamentos com criptografia de ponta (o mesmo sistema de segurança que os grandes bancos usam). Seus dados pessoais e de cartão estão 100% protegidos e blindados.",
   },
