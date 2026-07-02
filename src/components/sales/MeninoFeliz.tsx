@@ -16,7 +16,7 @@ export function MeninoFeliz() {
           />
         </div>
         <p className="mt-8 text-center text-xl font-bold text-white sm:text-2xl">
-          Você está há um passo de ter seu Agente de IA do Zero...
+          Você está há um passo de ter seu Agente de IA do Zero e é mais simples do que você imagina!
         </p>
       </div>
     </section>
