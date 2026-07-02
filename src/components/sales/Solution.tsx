@@ -18,7 +18,7 @@ export function Solution() {
     <section className="bg-secondary px-4 py-20 text-secondary-foreground">
       <div className="mx-auto max-w-3xl">
         <h2 className="text-balance mb-10 text-center text-xl font-bold leading-tight text-white sm:text-2xl md:text-3xl">
-          Até agora você só não fez seu agente de IA porque ninguém ainda te mostrou o caminho.
+          Não é culpa sua. É que ninguém até agora&nbsp; te mostrou o caminho certo.
         </h2>
         <div className="flex flex-col items-center gap-6 rounded-2xl bg-white p-8 text-center md:flex-row md:text-center">
           <div className="shrink-0">
