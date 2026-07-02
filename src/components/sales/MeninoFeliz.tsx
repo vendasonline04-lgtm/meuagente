@@ -15,6 +15,9 @@ export function MeninoFeliz() {
             loading="lazy"
           />
         </div>
+        <p className="mt-8 text-center text-xl font-bold text-white sm:text-2xl">
+          Você está há um passo de ter seu Agente de IA do Zero...
+        </p>
       </div>
     </section>
   );

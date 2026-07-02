@@ -26,8 +26,8 @@ function App() {
       <Hero />
       {/* <Testimonials /> */}
       <ProblemCycle />
-      <MeninoFeliz />
       <Solution />
+      <MeninoFeliz />
       <FourSteps />
       <Deliverables />
       <ForWho />
