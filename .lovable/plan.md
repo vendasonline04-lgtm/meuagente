@@ -1,19 +1,20 @@
 ## Problema
 
-O console do navegador mostra `[vite] server connection lost. Polling for restart...` — o preview ficou com uma conexão HMR antiga e não está recebendo as atualizações, embora o dev server esteja saudável e processando as edições normalmente (último HMR aplicado em `ProblemCycle.tsx` e `styles.css`).
+O bloco `MeninoFeliz` (headline "Com o Agente de IA do Zero você vai:" + imagem do menino) existe em `src/routes/index.tsx`, mas o preview do Lovable e o build de produção usam `src/main.tsx` — e nesse arquivo o componente **não está importado nem renderizado**. Por isso a seção não aparece.
 
-Não há erro de build nem código quebrado — é puramente o cliente do preview que está com o socket HMR caído.
+## Correção
 
-## Plano
+Editar apenas `src/main.tsx`:
 
-1. Disparar um flush do gate HMR (`POST /__hmr_flush`) para forçar o Vite a re-emitir os módulos atuais e disparar reload no preview.
-2. Confirmar nos logs que o reload foi propagado.
+1. Adicionar o import:
+   ```tsx
+   import { MeninoFeliz } from '@/components/sales/MeninoFeliz'
+   ```
+2. Renderizar `<MeninoFeliz />` logo depois de `<ProblemCycle />`, na mesma posição em que aparece no `routes/index.tsx`.
 
-Se mesmo após o flush o preview continuar estagnado, a próxima etapa é reiniciar o dev server do sandbox (sem mexer em nenhum arquivo do projeto).
+Nenhum outro arquivo é alterado. Sem mudanças de cor, preço, texto ou estrutura de outros componentes.
 
-## Detalhes técnicos
+## Validação
 
-- Nenhum arquivo do projeto será alterado.
-- Comandos:
-  - `curl -sf -X POST http://localhost:8080/__hmr_flush`
-  - Se necessário: reiniciar o dev server via `restart_dev_server`.
+- Preview mostra a seção laranja com a headline "Com o Agente de IA do Zero você vai:" e a imagem `meninosuperfeliz.png` abaixo, entre `ProblemCycle` e `Solution`.
+- Build continua passando.
