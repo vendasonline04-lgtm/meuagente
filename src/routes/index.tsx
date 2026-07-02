@@ -3,6 +3,7 @@ import { UrgencyBar } from "@/components/sales/UrgencyBar";
 import { Hero } from "@/components/sales/Hero";
 import { Testimonials } from "@/components/sales/Testimonials";
 import { ProblemCycle } from "@/components/sales/ProblemCycle";
+import { MeninoFeliz } from "@/components/sales/MeninoFeliz";
 import { Solution } from "@/components/sales/Solution";
 import { FourSteps } from "@/components/sales/FourSteps";
 import { Deliverables } from "@/components/sales/Deliverables";
@@ -54,7 +55,8 @@ function SalesPage() {
       <Hero />
       {/* <Testimonials /> */}
       <ProblemCycle />
-      {/* <Solution /> */}
+      <MeninoFeliz />
+      <Solution />
       <FourSteps />
       <Deliverables />
       <ForWho />
