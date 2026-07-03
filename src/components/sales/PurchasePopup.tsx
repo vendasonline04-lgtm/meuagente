@@ -113,11 +113,11 @@ export function PurchasePopup() {
         ${visible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-8 md:translate-x-[-2rem]"}
       `}
     >
-      <div className="pointer-events-auto flex items-center gap-3 rounded-xl border border-black/5 bg-white px-4 py-3 shadow-2xl max-w-[92vw] md:max-w-sm">
-        <CheckCircle2 className="h-8 w-8 flex-shrink-0 text-green-500" strokeWidth={2.5} />
+      <div className="pointer-events-auto flex items-center gap-3 rounded-xl border border-white/20 bg-green-600 px-4 py-3 shadow-2xl max-w-[92vw] md:max-w-sm">
+        <CheckCircle2 className="h-8 w-8 flex-shrink-0 text-white" strokeWidth={2.5} />
         <div className="flex flex-col leading-tight">
-          <span className="text-sm font-bold text-gray-900">{name}</span>
-          <span className="text-xs font-medium text-green-600">compra aprovada!</span>
+          <span className="text-sm font-bold text-white">{name}</span>
+          <span className="text-xs font-medium text-white/90">compra aprovada!</span>
         </div>
       </div>
     </div>
