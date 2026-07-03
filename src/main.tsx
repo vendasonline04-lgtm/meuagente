@@ -18,6 +18,7 @@ import { DeliverySteps } from '@/components/sales/DeliverySteps'
 import { Recap } from '@/components/sales/Recap'
 import { FAQ } from '@/components/sales/FAQ'
 import { Footer } from '@/components/sales/Footer'
+import { PurchasePopup } from '@/components/sales/PurchasePopup'
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
       {/* <Guarantee /> */}
       <FAQ />
       <Footer />
+      <PurchasePopup />
     </main>
   )
 }
