@@ -3,7 +3,7 @@ import { CTAButton } from "./CTAButton";
 import { Zap, ShieldCheck, Clock, Diamond, Lock } from "lucide-react";
 
 function Countdown() {
-  const [time, setTime] = useState({ h: 0, m: 30, s: 0 });
+  const [time, setTime] = useState({ h: 24, m: 0, s: 0 });
 
   useEffect(() => {
     const t = setInterval(() => {
