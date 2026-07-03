@@ -41,6 +41,7 @@ function App() {
       {/* <Guarantee /> */}
       <FAQ />
       <Footer />
+      <PurchasePopup />
     </main>
   )
 }
