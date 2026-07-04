@@ -19,10 +19,6 @@ const faqs = [
     a: "Sim. A aula foi feita exatamente para quem nunca criou um agente. Você não precisa saber programar.",
   },
   {
-    q: "E se eu não souber conectar ferramentas?",
-    a: "Você não precisa saber. Todos os comandos e arquivos já estão prontos dentro do produto, você só vai copiar e colar onde eu mostro. Se você sabe abrir uma pasta no computador, você consegue.",
-  },
-  {
     q: "Quanto tempo vou ter acesso?",
     a: "Acesso vitalício. Pagou uma vez, acessa para sempre.",
   },
@@ -31,8 +27,8 @@ const faqs = [
     a: "Sim. Pagamento processado com criptografia SSL. Seus dados estão protegidos.",
   },
   {
-    q: "Vou precisar aprender alguma ferramenta complicada de automação?",
-    a: "Não. Vamos usar o Claude Code Pro, uma IA simples de usar, parecida com um chat. Na aula eu te mostro passo a passo: você copia, cola e roda. Zero complicação.",
+    q: "Qual ferramenta de IA usaremos?",
+    a: "Para esta aula, usaremos o Claude Code plano PRO. Além dele, usaremos várias ferramentas gratuitas.",
   },
 ];
 
