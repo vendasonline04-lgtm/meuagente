@@ -37,7 +37,7 @@ export function Hero() {
         {/* Faixa de destaque */}
         <div className="mb-5 inline-block rounded-full bg-alert px-5 py-2">
           <p className="text-base font-medium text-white">
-            Já imaginou ver seu dia render, sem que tudo dependa só de você?
+            Já imaginou ver seu dia render, sem que tudo dependa de você?
           </p>
         </div>
 

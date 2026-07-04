@@ -42,7 +42,7 @@ export function FourSteps() {
     <section className="bg-background px-4 py-20 text-foreground">
       <div className="mx-auto max-w-5xl">
         <h2 className="text-center text-3xl font-bold sm:text-4xl">
-          Em 4 passos você segue, executa, e termina com o agente funcionando.
+          Em que você segue, executa e termina em 4 passos para ver seu agente funcionando:
         </h2>
 
         <div className="mt-12 space-y-6">
